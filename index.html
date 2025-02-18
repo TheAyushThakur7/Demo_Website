@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>EVERYDAY WARRIORS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+  <div class="header-container">
+    <a href="#">
+      <img src="https://i.ibb.co/bg9tBKvC/20250218-144712.png" alt="Logo" class="logo">
+    </a>
+    <a href="#" class="btn">Join Now</a>
+  </div>
+</header>
+  <!-- Hero Section -->
+  <section class="video-section">
+  <h2 class="video-heading">WATCH NOW!</h2>
+  <div class="video-container">
+    <iframe class="course-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+ 
+  <hr class="thin-border">
+<h2 class="features-heading">WHY CHOOSE <span class="brand-name">EVERYDAY WARRIORS</span></h2>
+
+<!-- Thin Border after heading -->
+<hr class="thin-border">
+
+<!-- Feature Cards -->
+<div class="features-container">
+    <!-- Feature Card 1 -->
+    <div class="feature-card feature-card-1">
+        <p class="feature-text">Feature 1</p>
+    </div>
+    
+    <!-- Feature Card 2 -->
+    <div class="feature-card feature-card-2">
+        <p class="feature-text">Feature 2</p>
+    </div>
+    
+    <!-- Feature Card 3 -->
+    <div class="feature-card feature-card-3">
+        <p class="feature-text">Feature 3</p>
+    </div>
+</div>
+
+<!-- Thin Border after Feature Cards -->
+<hr class="thin-border">
+
+<!-- Video Section -->
+<center>
+<section class="segment">
+        <h2 class="features-headingg" style="color: red">WHAT WE PROVIDE?</h2>          <br>    
+    <div class="slider-container1">
+        <div class="slider1">
+            <div class="slide"><img src="https://i.ibb.co/5xB0xL05/20250218-145521.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="https://i.ibb.co/xSg87mh0/20250218-145531.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="https://i.ibb.co/99hmPgwP/20250218-145510.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="https://i.ibb.co/PBW21Yk/20250218-145443.jpg" alt="Image 4"></div>
+        </div>
+    </div>   
+   <h1 class="fitness-heading" style="text-align: center;">POSITIVE QUALITY 1</h1>
+    <hr class="hellohe">
+    
+     <div class="slider-container1">
+    <div class="slider1">
+        <div class="slide"><img src="https://i.ibb.co/5xB0xL05/20250218-145521.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="https://i.ibb.co/99hmPgwP/20250218-145510.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="https://i.ibb.co/xSg87mh0/20250218-145531.jpg"         alt="Image 3"></div>
+    </div>
+</div>
+<h1 class="fitness-heading" style="text-align: center;">POSITIVE QUALITY 2</h1>
+<hr class="hellohe">
+<div class="slider-container1">
+    <div class="slider1">
+        <div class="slide"><img src="https://i.ibb.co/PBW21Yk/20250218-145443.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="https://i.ibb.co/99hmPgwP/20250218-145510.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="https://i.ibb.co/5xB0xL05/20250218-145521.jpg" alt="Image 3"></div>
+    </div>
+</div>
+<h1 class="fitness-heading" style="text-align: center;">POSITIVE QUALITY 3</h1>
+<hr class="hellohe">
+<div class="slider-container1">
+    <div class="slider1">
+        <div class="slide1"><img src="https://i.ibb.co/PBW21Yk/20250218-145443.jpg" alt="Image 1"></div>
+        <div class="slide1"><img src="https://i.ibb.co/99hmPgwP/20250218-145510.jpg" alt="Image 2"></div>  
+        <div class="slide1"><img src="https://i.ibb.co/5xB0xL05/20250218-145521.jpg" alt="Image 2"></div>   
+        </div>
+       <div class="slide1"><img src="https://i.ibb.co/xSg87mh0/20250218-145531.jpg" alt="Image 2"></div>  
+</div>
+<h1 class="fitness-heading" style="text-align: center;">POSITIVE QUALITY 4</h1>
+       </section>        
+<hr class="thin-border">
+</center>
+
+<section class="cta-section">
+  <p class="cta-text" style="color: #d3d3d3;">
+    Ready to make the RIGHT CHOICE?
+  </p>
+  <a href="javascript:void(0)" class="btn1">BUY NOW</a><br>
+</section>
+
+<footer style="text-align: center; font-size: 10px; color: gray; padding: 10px;">
+<hr style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.2); margin: 10px auto; width: 100%;">   
+<a href="https://theayushthakur7.github.io/My_Portfolio/" target="_blank" style="color: gray; text-decoration: none;"> Made By Ayush Thakur (Click To See)</a>
+</footer>
+
+<script>
+   document.querySelectorAll(".slider, .slider1").forEach((slider) => {
+    let slides = slider.querySelectorAll(".slide, .slide1");
+    let index = 0;
+
+    function showSlide() {
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+        index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 3000);
+    showSlide();
+});
+
+// Get the "name" query parameter and replace "Everyday Warriors"
+const urlParams = new URLSearchParams(window.location.search);
+const name = urlParams.get('name') || "Everyday Warriors"; // Default to "Everyday Warriors" if no name is provided
+document.querySelectorAll('.brand-name').forEach((el) => {
+    el.textContent = name;
+});
+
+const hiddenElements = document.querySelectorAll('.features-heading, .features-container, .segment, .fitness-heading, .hellohe, .slider-container, .slider-container1, .cta-section, footer');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 });
+
+hiddenElements.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
